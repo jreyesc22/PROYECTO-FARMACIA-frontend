@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Diseño general de la aplicación */
+.app {
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  background-color: #333; /* Color de fondo del menú */
+  padding: 10px 0;
+  position: sticky;
+  top: 0; /* Fija el menú en la parte superior */
+  z-index: 1000; /* Asegura que el menú quede encima del contenido */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-button {
+  background-color: #4CAF50; /* Color de fondo de los botones */
+  color: white; /* Texto blanco */
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer; /* Cambia el cursor a mano cuando pasa sobre el botón */
+  margin: 0 10px; /* Espacio entre los botones */
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Transición suave */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-button:hover {
+  background-color: #45a049; /* Efecto hover */
+}
+
+/* Contenido principal */
+.content {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cuadro-medicamento, .cuadro-gestion {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px;
 }
