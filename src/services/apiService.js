@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 // Configura la URL base de tu API
-const API_URL = 'http://localhost:8080/api/medicamentos/';
+const API_URL = 'https://api-examen-rec.onrender.com/api/medicamentos/';
 
 // Instancia de Axios con configuración base
 const api = axios.create({
